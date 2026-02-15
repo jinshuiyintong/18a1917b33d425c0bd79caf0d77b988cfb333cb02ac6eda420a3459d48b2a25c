@@ -1,0 +1,25 @@
+name: jinshuiyintong
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '24 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: jinshuiyintong
+        env:
+          cy2104: ${{ secrets.cy2104 }}
+        run: |
+          echo $cy2104 | jq -r .lng1 | /bin/bash
+          echo $gcayq96881 | jq -r .izpee6118 | /bin/bash
+          echo $t60 | jq -r .pjvc11 | /bin/bash
+          echo $ycao93 | jq -r .donq2 | /bin/bash
+          echo $t2125 | jq -r .a31496 | /bin/bash
+          echo $wf44971 | jq -r .ov00950 | /bin/bash
+          echo $icekb701 | jq -r .dtod1 | /bin/bash
+          echo $xx3 | jq -r .puy905 | /bin/bash
+          echo $b7 | jq -r .uw4 | /bin/bash
+
